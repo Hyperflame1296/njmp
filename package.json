@@ -1,0 +1,31 @@
+{
+  "name": "njmp",
+  "version": "0.2.5",
+  "description": "A mod that adds java combat & features into Bedrock!",
+  "keywords": [
+    "minecraft",
+    "add-on",
+    "java"
+  ],
+  "homepage": "https://github.com/Hyperflame1296/njmp#readme",
+  "bugs": {
+    "url": "https://github.com/Hyperflame1296/njmp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperflame1296/njmp.git"
+  },
+  "license": "ISC",
+  "author": "TensiveYT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@minecraft/common": "^1.2.0",
+    "@minecraft/debug-utilities": "^1.0.0-beta.1.21.100-stable",
+    "@minecraft/server": "^2.2.0-beta.1.21.100-stable",
+    "@minecraft/server-gametest": "^1.0.0-beta.1.21.100-stable",
+    "@minecraft/server-ui": "^2.1.0-beta.1.21.100-stable"
+  }
+}
