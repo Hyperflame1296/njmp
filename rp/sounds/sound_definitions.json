@@ -1,0 +1,1170 @@
+{
+    "format_version": "1.20.81",
+    "sound_definitions": {
+        "ambient.underwater.enter": {
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/enter1",
+                    "volume": 0.5
+                },
+                {
+                    "name": "sounds/ambient/underwater/enter2",
+                    "volume": 0.5
+                },
+                {
+                    "name": "sounds/ambient/underwater/enter3",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ambient.underwater.exit": {
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/exit1",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/ambient/underwater/exit2",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/ambient/underwater/exit3",
+                    "volume": 0.3
+                }
+            ]
+        },
+        "ambient.underwater.loop": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/underwater_ambience",
+                    "is3D": false,
+                    "volume": 0.65,
+                    "stream": true
+                }
+            ]
+        },
+        "ambient.underwater.loop.additions": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles1",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles2",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles3",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles4",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles5",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bubbles6",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/water1",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/water2",
+                    "is3D": false
+                }
+            ]
+        },
+        "ambient.underwater.loop.additions.rare": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/additions/animal1",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bass_whale1",
+                    "is3D": false,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/bass_whale2",
+                    "is3D": false,
+                    "volume": 0.5
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/crackles1",
+                    "is3D": false,
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/crackles2",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/driplets1",
+                    "is3D": false,
+                    "volume": 0.5
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/driplets2",
+                    "is3D": false,
+                    "volume": 0.5
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/earth_crack",
+                    "is3D": false
+                }
+            ]
+        },
+        "ambient.underwater.loop.additions.ultra_rare": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/ambient/underwater/additions/animal2",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/dark1",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/dark2",
+                    "is3D": false,
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/dark3",
+                    "is3D": false
+                },
+                {
+                    "name": "sounds/ambient/underwater/additions/dark4",
+                    "is3D": false
+                }
+            ]
+        },
+        "ambient.weather.rain": {
+            "__use_legacy_max_distance": "true",
+            "category": "weather",
+            "max_distance": null,
+            "min_distance": 100,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/ambient/weather/rain1",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain2",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain3",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain4",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain5",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain6",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain7",
+                    "volume": 1
+                },
+                {
+                    "name": "sounds/ambient/weather/rain8",
+                    "volume": 1
+                }
+            ]
+        },
+        "block.bubble_column.bubble_pop": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bubble_column/bubble1",
+                    "volume": 0.1
+                },
+                {
+                    "name": "sounds/block/bubble_column/bubble2",
+                    "volume": 0.1
+                },
+                {
+                    "name": "sounds/block/bubble_column/bubble3",
+                    "volume": 0.1
+                }
+            ]
+        },
+        "block.bubble_column.upwards_ambient": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bubble_column/upwards_ambient1",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/upwards_ambient2",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/upwards_ambient3",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/upwards_ambient4",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/upwards_ambient5",
+                    "volume": 0.6
+                }
+            ]
+        },
+        "block.bubble_column.upwards_inside": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bubble_column/upwards_inside",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "block.bubble_column.whirlpool_ambient": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_ambient1",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_ambient2",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_ambient3",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_ambient4",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_ambient5",
+                    "volume": 0.6
+                }
+            ]
+        },
+        "block.bubble_column.whirlpool_inside": {
+            "category": "ambient",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bubble_column/whirlpool_inside",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "cauldron.adddye": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.cleanarmor": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.cleanbanner": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.dyearmor": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.explode": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/random/explode1",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/random/explode2",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/random/explode3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/random/explode4",
+                    "volume": 0.3
+                }
+            ]
+        },
+        "cauldron.fillpotion": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.fillwater": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.takepotion": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "cauldron.takewater": {
+            "__use_legacy_max_distance": "true",
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/splash",
+                    "volume": 0.2
+                },
+                {
+                    "name": "sounds/liquid/splash2",
+                    "volume": 0.2
+                }
+            ]
+        },
+        "entity.arrow.hit_player": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/random/successful_hit"
+                }
+            ]
+        },
+        "entity.boat.paddle_land": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/entity/boat/paddle_land1",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_land2",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_land3",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_land4",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_land5",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_land6",
+                    "volume": 12
+                }
+            ]
+        },
+        "entity.boat.paddle_water": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/entity/boat/paddle_water1",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water2",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water3",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water4",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water5",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water6",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water7",
+                    "volume": 12
+                },
+                {
+                    "name": "sounds/entity/boat/paddle_water8",
+                    "volume": 12
+                }
+            ]
+        },
+        "entity.cod.ambient": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": []
+        },
+        "entity.cod.death": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                "sounds/entity/fish/hurt1",
+                "sounds/entity/fish/hurt2",
+                "sounds/entity/fish/hurt3",
+                "sounds/entity/fish/hurt4"
+            ]
+        },
+        "entity.cod.flop": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/flop1",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop2",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop4",
+                    "volume": 0.3
+                }
+            ]
+        },
+        "entity.cod.hurt": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                "sounds/entity/fish/hurt1",
+                "sounds/entity/fish/hurt2",
+                "sounds/entity/fish/hurt3",
+                "sounds/entity/fish/hurt4"
+            ]
+        },
+        "entity.fishing_bobber.splash": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/random/splash"
+                }
+            ]
+        },
+        "entity.generic.big_fall": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/fallbig"
+                }
+            ]
+        },
+        "entity.generic.death": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/hit1"
+                },
+                "sounds/damage/hit2",
+                "sounds/damage/hit3"
+            ]
+        },
+        "entity.generic.drink": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/random/drink"
+                }
+            ]
+        },
+        "entity.generic.eat": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/random/eat1"
+                },
+                {
+                    "name": "sounds/random/eat2"
+                },
+                {
+                    "name": "sounds/random/eat3"
+                }
+            ]
+        },
+        "entity.generic.hurt": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/hit1"
+                },
+                "sounds/damage/hit2",
+                "sounds/damage/hit3"
+            ]
+        },
+        "entity.generic.small_fall": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/fallsmall"
+                }
+            ]
+        },
+        "entity.generic.splash": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/liquid/splash"
+                },
+                "sounds/liquid/splash2"
+            ]
+        },
+        "entity.generic.swim": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/liquid/swim1"
+                },
+                "sounds/liquid/swim2",
+                "sounds/liquid/swim3",
+                "sounds/liquid/swim4"
+            ]
+        },
+        "entity.player.attack.crit": {
+            "max_distance": null,
+            "min_distance": null,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/crit1",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/crit2",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/crit3",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.attack.knockback": {
+            "max_distance": 16,
+            "min_distance": 0,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/knockback1",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/knockback2",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/knockback3",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/knockback4",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.attack.nodamage": {
+            "max_distance": null,
+            "min_distance": null,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/weak1",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak2",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak3",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak4",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.attack.strong": {
+            "max_distance": null,
+            "min_distance": null,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/strong1",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/entity/player/attack/strong2",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/entity/player/attack/strong3",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/entity/player/attack/strong4",
+                    "volume": 0.6
+                },
+                {
+                    "name": "sounds/entity/player/attack/strong5",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/strong6",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.attack.sweep": {
+            "max_distance": null,
+            "min_distance": null,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/sweep1",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep2",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep3",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep4",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep5",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep6",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/sweep7",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.attack.weak": {
+            "max_distance": null,
+            "min_distance": null,
+            "category": "player",
+            "sounds": [
+                {
+                    "name": "sounds/entity/player/attack/weak1",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak2",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak3",
+                    "volume": 0.7
+                },
+                {
+                    "name": "sounds/entity/player/attack/weak4",
+                    "volume": 0.7
+                }
+            ]
+        },
+        "entity.player.big_fall": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/fallbig"
+                }
+            ]
+        },
+        "entity.player.death": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/hit1"
+                },
+                "sounds/damage/hit2",
+                "sounds/damage/hit3"
+            ]
+        },
+        "entity.player.hurt": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/hit1"
+                },
+                "sounds/damage/hit2",
+                "sounds/damage/hit3"
+            ]
+        },
+        "entity.player.small_fall": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/damage/fallsmall"
+                }
+            ]
+        },
+        "entity.player.splash": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/liquid/splash"
+                },
+                "sounds/liquid/splash2"
+            ]
+        },
+        "entity.player.splash.high_speed": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/liquid/heavy_splash"
+                }
+            ]
+        },
+        "entity.player.swim": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/liquid/swim5"
+                },
+                "sounds/liquid/swim6",
+                "sounds/liquid/swim7",
+                "sounds/liquid/swim8",
+                "sounds/liquid/swim9",
+                "sounds/liquid/swim10",
+                "sounds/liquid/swim11",
+                "sounds/liquid/swim12",
+                "sounds/liquid/swim13",
+                "sounds/liquid/swim14",
+                "sounds/liquid/swim15",
+                "sounds/liquid/swim16",
+                "sounds/liquid/swim17",
+                "sounds/liquid/swim18"
+            ]
+        },
+        "entity.salmon.ambient": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": []
+        },
+        "entity.salmon.death": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/hurt1",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt2",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt3",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt4",
+                    "pitch": 0.8
+                }
+            ]
+        },
+        "entity.salmon.flop": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/flop1",
+                    "pitch": 0.8,
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop2",
+                    "pitch": 0.8,
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop3",
+                    "pitch": 0.8,
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop4",
+                    "pitch": 0.8,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "entity.salmon.hurt": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/hurt1",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt2",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt3",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt4",
+                    "pitch": 0.8
+                }
+            ]
+        },
+        "entity.tropical_fish.ambient": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": []
+        },
+        "entity.tropical_fish.death": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/hurt1",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt2",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt3",
+                    "pitch": 0.8
+                },
+                {
+                    "name": "sounds/entity/fish/hurt4",
+                    "pitch": 0.8
+                }
+            ]
+        },
+        "entity.tropical_fish.flop": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/entity/fish/flop1",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop2",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "sounds/entity/fish/flop4",
+                    "volume": 0.3
+                }
+            ]
+        },
+        "entity.tropical_fish.hurt": {
+            "__use_legacy_max_distance" : "true",
+            "category": "neutral",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                "sounds/entity/fish/hurt1",
+                "sounds/entity/fish/hurt2",
+                "sounds/entity/fish/hurt3",
+                "sounds/entity/fish/hurt4"
+            ]
+        },
+        "item.trident.riptide_1": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/trident/riptide1"
+                }
+            ]
+        },
+        "item.trident.riptide_2": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/trident/riptide2"
+                }
+            ]
+        },
+        "item.trident.riptide_3": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/trident/riptide3"
+                }
+            ]
+        },
+        "random.splash": {
+            "__use_legacy_max_distance": "true",
+            "category": "player",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/liquid/splash"
+                },
+                "sounds/liquid/splash2"
+            ]
+        }
+    }
+}
