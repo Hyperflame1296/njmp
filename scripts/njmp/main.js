@@ -1094,7 +1094,7 @@ let njmp = {
                     } else {
                         player.setProperty('njmp:player.holding_weapon', false)
                     }
-                    if (player.hasTag('njmp:player.enable_1.9_pvp')) {
+                    if (player.hasTag('njmp:player.enable_1.9_pvp') || player.hasTag('njmp:player.nullify_damage')) {
                         player.triggerEvent('njmp:enable_1.9_pvp')
                     } else {
                         player.triggerEvent('njmp:disable_1.9_pvp')
@@ -1143,7 +1143,7 @@ let njmp = {
     },
     on_load: function() {
         // runs when the script is loaded
-        s.world.sendMessage('\xa7aJMP has reloaded and initialized! \xa7f- \xa7o\xa7iThis might\'ve been done to fix bugs or add new features.')
+        s.world.sendMessage(`\xa7fScript reloaded\xa7i! (NJMP)`);
     }
 }
 s.system.beforeEvents.startup.subscribe(e => {
