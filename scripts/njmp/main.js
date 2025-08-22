@@ -739,7 +739,7 @@ let njmp = {
                                 sweep: !attacker.isSprinting && attacker.isOnGround && attack_meter >= 0.848 && attacker_equipment.mainhand && attacker_equipment.mainhand.hasTag('minecraft:is_sword') && attacker_equipment.mainhand.typeId !== 'minecraft:mace',
                                 break: break_,
                                 enchanted: attacker_sharpness !== 0,
-                                blocked: target.getProperty('njmp:player.blocking'),
+                                blocked: typeof target.getProperty('njmp:player.blocking') !== 'undefined' ? target.getProperty('njmp:player.blocking') : false,
                                 shield_disabled: r < shield_disable_chance && attacker_equipment.mainhand && attacker_equipment.mainhand.hasTag('minecraft:is_axe')
                             }
                             let attack_knockback_horizontal = 0.8 * (hit_info.knockback ? 1.3 : 1.0);
@@ -1081,18 +1081,18 @@ let njmp = {
                         ) && 
                         player.hasTag('njmp:player.enable_1.9_pvp')
                     ) ? true : false
-                    player.setProperty('njmp:player.attack_meter', atkm)
+                    typeof player.getProperty('njmp:player.attack_meter') !== 'undefined' ? player.setProperty('njmp:player.attack_meter', atkm) : void 0
                     
                     let view = player.getEntitiesFromViewDirection()
                     if (view && view.length > 0 && view[0] && view[0].entity && view[0].entity.typeId !== 'minecraft:item' && njmp.methods.dist(player.location, view[0].entity.location) <= njmp.reach)
-                        player.setProperty('njmp:player.looking_at_entity', true)
+                        typeof player.getProperty('njmp:player.looking_at_entity') !== 'undefined' ? player.setProperty('njmp:player.looking_at_entity', true) : void 0
                     else {
-                        player.setProperty('njmp:player.looking_at_entity', false)
+                        typeof player.getProperty('njmp:player.looking_at_entity') !== 'undefined' ? player.setProperty('njmp:player.looking_at_entity', false) : void 0
                     }
                     if (player.hasTag('njmp:player.enable_1.9_pvp')) {
-                        player.setProperty('njmp:player.holding_weapon', atkm >= 1.0 && isholdingweapon) // w
+                        typeof player.getProperty('njmp:player.holding_weapon') !== 'undefined' ? player.setProperty('njmp:player.holding_weapon', atkm >= 1.0 && isholdingweapon) : void 0 // w
                     } else {
-                        player.setProperty('njmp:player.holding_weapon', false)
+                        typeof player.getProperty('njmp:player.holding_weapon') !== 'undefined' ? player.setProperty('njmp:player.holding_weapon', false) : void 0
                     }
                     if (player.hasTag('njmp:player.enable_1.9_pvp') || player.hasTag('njmp:player.nullify_damage')) {
                         player.triggerEvent('njmp:enable_1.9_pvp')
@@ -1107,9 +1107,9 @@ let njmp = {
                         (player.getDynamicProperty('njmp:timer.player.shield_disable') ?? 0) <= 0 && 
                         (player.getDynamicProperty('njmp:timer.player.block') ?? 0) <= 0
                     ) {
-                        player.setProperty('njmp:player.blocking', 1.0)
+                        typeof player.getProperty('njmp:player.blocking') !== 'undefined' ? player.setProperty('njmp:player.blocking', 1.0) : void 0
                     } else {
-                        player.setProperty('njmp:player.blocking', 0.0)
+                        typeof player.getProperty('njmp:player.blocking') !== 'undefined' ? player.setProperty('njmp:player.blocking', 0.0) : void 0
                     }
 
                     if (s.world.getDynamicProperty('njmp:gamerule.do_custom_ambience') ?? true)
