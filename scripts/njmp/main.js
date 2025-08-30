@@ -1100,7 +1100,7 @@ let njmp = {
                         player.triggerEvent('njmp:disable_1.9_pvp')
                     }
                     if (
-                        player.inputInfo.getButtonState('Sneak') === 'Pressed' && 
+                        player.isSneaking && 
                         player_equipment.offhand && 
                         player_equipment.offhand.typeId === 'minecraft:shield' && 
                         !player.getDynamicProperty('njmp:is_using_item') && 
