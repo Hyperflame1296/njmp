@@ -732,7 +732,7 @@ let njmp = {
                         }
                         if ((attacker.getDynamicProperty('njmp:timer.player.hit') ?? 0) <= 0) {
                             // order: base damage, effects, enchatments
-                            let shield_disable_chance = s.world.getDynamicProperty('njmp:gamerule.enable_shield_chance') ?? true ? (0.25 + attacker_efficiency * 0.05) + (attacker.isSprinting && attack_meter >= 0.848 ? 0.75 : 0) : void 0;
+                            let shield_disable_chance = s.world.getDynamicProperty('njmp:gamerule.enable_shield_chance') ?? true ? (0.25 + attacker_efficiency * 0.05) + (attacker.isSprinting && attack_meter >= 0.848 ? 0.75 : 0) : 1.0;
                             let hit_info = {
                                 critical: attack_meter >= 0.848 && !attacker.isSprinting && attacker.isFalling && !attacker.isInWater,
                                 knockback: attacker.isSprinting && attack_meter >= 0.848,
