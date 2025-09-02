@@ -2,17 +2,17 @@
     "format_version": 2,
     "header": {
         "description": "Adds java combat & features into Bedrock",
-        "name": "§i[§fRP§i] §6New Java Mod Pack §i- §fv0.2.6",
+        "name": "§i[§fRP§i] §6New Java Mod Pack §i- §fv0.2.7",
         "uuid": "aadf5060-8d95-4459-bd94-acecd1389fec",
-        "version": [ 0, 2, 6 ],
+        "version": [ 0, 2, 7 ],
         "min_engine_version": [ 1, 21, 100 ]
     },
     "modules": [
         {
-            "description": "rp0.2.6",
+            "description": "rp0.2.7",
             "type": "resources",
             "uuid": "a2218247-2ccc-4127-911b-371fab841672",
-            "version": [ 0, 2, 6 ]
+            "version": [ 0, 2, 7 ]
         }
     ],
     

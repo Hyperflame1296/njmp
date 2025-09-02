@@ -339,5 +339,24 @@
                 "volume": 1
             }
         }
+    },
+    "block_sounds": {
+        "crop": {
+            "events": {
+                "break": "block.crop.break",
+                "default": "",
+                "hit": {
+                    "pitch": 0.5,
+                    "sound": "block.crop.break",
+                    "volume": 0.3
+                },
+                "item.use.on": "item.crop.plant",
+                "place": "item.crop.plant"
+            },
+            "pitch": [
+                0.8,
+                1.2
+            ]
+        }
     }
 }

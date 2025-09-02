@@ -2,30 +2,30 @@
     "format_version": 2,
     "header": {
         "description": "Adds java combat & features into Bedrock!",
-        "name": "§i[§fBP§i] §6New Java Mod Pack §i- §fv0.2.6",
+        "name": "§i[§fBP§i] §6New Java Mod Pack §i- §fv0.2.7",
         "uuid": "1fbf967d-86d1-4b29-8bbe-2547c95d2a42",
-        "version": [ 0, 2, 6 ],
+        "version": [ 0, 2, 7 ],
         "min_engine_version": [ 1, 21, 100 ]
     },
     "modules": [
         {
-            "description": "bp0.2.6",
+            "description": "bp0.2.7",
             "type": "data",
             "uuid": "1b2f84a1-fa7a-40cf-9bb8-ac562222d98a",
-            "version": [ 0, 2, 5 ]
+            "version": [ 0, 2, 7 ]
         },
         {
-            "description": "bp0.2.6",
+            "description": "bp0.2.7",
             "type": "script",
             "uuid": "69f1c55e-9e04-4a4b-815c-a1e045a9d89a",
-            "version": [ 0, 2, 6 ],
+            "version": [ 0, 2, 7 ],
             "entry": "scripts/njmp/main.js"
         }
     ],
     "dependencies": [
         {
             "uuid": "aadf5060-8d95-4459-bd94-acecd1389fec",
-            "version": [ 0, 2, 6 ]
+            "version": [ 0, 2, 7 ]
         },
         {
             "module_name": "@minecraft/server",

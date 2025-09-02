@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.40",
+    "carrots": {
+        "sound": "crop",
+        "textures": "carrots"
+    },
+    "wheat": {
+        "sound": "crop",
+        "textures": "wheat"
+    },
+    "beetroot": {
+        "sound": "crop",
+        "textures": "beetroot"
+    },
+    "potatoes": {
+        "sound": "crop",
+        "textures": "potatoes"
+    }
+}

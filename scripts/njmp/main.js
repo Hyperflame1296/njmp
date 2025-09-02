@@ -5,7 +5,7 @@ import * as cmn from '@minecraft/common';
 import * as dbg from '@minecraft/debug-utilities';
 
 let njmp = {
-    ver: 'v0.2.1-ncbrefactor',
+    ver: 'v0.2.7-ncbrefactor',
     reach: 3.4,
     item_stats: {
         default: {
@@ -461,6 +461,7 @@ let njmp = {
         },
         has_item_info: item => njmp.item_stats[item?.typeId.replace('minecraft:', '')],
         has_armor_info: item => njmp.armor_stats[item?.typeId.replace('minecraft:', '')],
+        indicator: x => String.fromCharCode(Math.min(57616 + Math.floor(x * 16), 57632)),
         // math
         dist   : (a, b) => Math.sqrt(((b.x - a.x) ** 2) + ((b.y - a.y) ** 2) + ((b.z - a.z) ** 2)),
         clamp  : (v, a, b) => Math.min(Math.max(v, a), b),
@@ -542,10 +543,10 @@ let njmp = {
                             let attacker_mining_fatigue = (attacker.getEffect('mining_fatigue') ?? {
                                 amplifier: -1
                             }).amplifier + 1
-                            let attack_speed = njmp.methods.clamp((njmp.methods.get_item_info(attacker_equipment.mainhand).speed * (1 + attacker_haste)) * (1 - attacker_mining_fatigue), 0, 20)
+                            let attack_speed = njmp.methods.clamp(njmp.methods.get_item_info(attacker_equipment.mainhand).speed * (1 + attacker_haste) * (1 - attacker_mining_fatigue), 0, 20)
                             attacker.setDynamicProperty('njmp:timer.player.hit', 10);
                             attacker.setDynamicProperty('njmp:timer.player.block', 5);
-                            s.world.getDynamicProperty('njmp:gamerule.enable_attack_cooldown') ?? true ? attacker.setDynamicProperty('njmp:timer.player.attack', s.TicksPerSecond / attack_speed) : void 0;;
+                            s.world.getDynamicProperty('njmp:gamerule.enable_attack_cooldown') ?? true ? attacker.setDynamicProperty('njmp:timer.player.attack', s.TicksPerSecond / Math.max(attack_speed, 0.1)) : void 0;;
                             attacker.setDynamicProperty('njmp:player.ticks_since_last_hit', 0);
                         }
                     }
@@ -631,9 +632,9 @@ let njmp = {
                     let target_resistance = (target.getEffect('resistance') ?? {
                         amplifier: -1
                     }).amplifier + 1
-                    let attack_speed = njmp.methods.clamp((njmp.methods.get_item_info(attacker_equipment.mainhand).speed * (1 + attacker_haste)) * (1 - attacker_mining_fatigue), 0, 20)
+                    let attack_speed = njmp.methods.clamp(njmp.methods.get_item_info(attacker_equipment.mainhand).speed * (1 + attacker_haste) * (1 - attacker_mining_fatigue), 0, 20)
                     let attack_damage = njmp.methods.get_item_info(attacker_equipment.mainhand).damage;
-                    let attack_meter = njmp.methods.clamp((1 - ((s.TicksPerSecond / attack_speed) - (attacker.getDynamicProperty('njmp:timer.player.attack') ?? -1))) / -(s.TicksPerSecond / attack_speed), 0, 1)
+                    let attack_meter = njmp.methods.clamp((1 - ((s.TicksPerSecond / attack_speed) - (attacker.getDynamicProperty('njmp:timer.player.attack') ?? -1))) / -(s.TicksPerSecond / Math.max(attack_speed, 0.1)), 0, 1)
                     if (!njmp.no_hit.includes(target.typeId)) {
                         let attacker_sharpness = attacker_equipment && attacker_equipment.mainhand && attacker_enchantable.mainhand ? (attacker_enchantable.mainhand.getEnchantment('minecraft:sharpness') ?? {
                             level: 0
@@ -716,7 +717,6 @@ let njmp = {
                         let total_toughness = target_equipment ? (njmp.methods.get_armor_info(target_equipment.head ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(target_equipment.chest ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(target_equipment.legs ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(target_equipment.feet ?? new s.ItemStack('minecraft:stone', 1)).tough) : 0;
                         let attacker_total_toughness = attacker_equipment ? (njmp.methods.get_armor_info(attacker_equipment.head ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(attacker_equipment.chest ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(attacker_equipment.legs ?? new s.ItemStack('minecraft:stone', 1)).tough) + (njmp.methods.get_armor_info(attacker_equipment.feet ?? new s.ItemStack('minecraft:stone', 1)).tough) : 0;
                         let break_;
-                        //console.log(damage_reduction)
                         if (r < tool_damage_chance && attacker_equipment.mainhand && holding_dmg_item && attacker.getGameMode?.() !== 'Creative') {
                             let durability = attacker_equipment.mainhand.getComponent('minecraft:durability');
                             let d = attacker_equipment.mainhand.hasTag('minecraft:is_sword') || attacker_equipment.mainhand.hasTag('minecraft:is_hoe') || attacker_equipment.mainhand.typeId === 'minecraft:mace' ? 1 : 2;
@@ -937,7 +937,7 @@ let njmp = {
                     // change hit & attack timers
                     (attacker.getDynamicProperty('njmp:timer.player.hit') ?? 0) <= 0 ? attacker.setDynamicProperty('njmp:timer.player.hit', 10) : void 0;
                     (attacker.getDynamicProperty('njmp:timer.player.block') ?? 0) <= 0 ? attacker.setDynamicProperty('njmp:timer.player.block', 5) : void 0;
-                    s.world.getDynamicProperty('njmp:gamerule.enable_attack_cooldown') ?? true ? attacker.setDynamicProperty('njmp:timer.player.attack', s.TicksPerSecond / attack_speed) : void 0;
+                    s.world.getDynamicProperty('njmp:gamerule.enable_attack_cooldown') ?? true ? attacker.setDynamicProperty('njmp:timer.player.attack', s.TicksPerSecond / Math.max(attack_speed, 0.1)) : void 0;
                     attacker.setDynamicProperty('njmp:player.ticks_since_last_hit', 0);
                 }
             },
@@ -1099,6 +1099,12 @@ let njmp = {
                     } else {
                         player.triggerEvent('njmp:disable_1.9_pvp')
                     }
+                    if (atkm >= 1.0 && player.getProperty('njmp:player.holding_weapon') && player.getProperty('njmp:player.looking_at_entity'))
+                        player.onScreenDisplay.setTitle(`{njmp.indicator}\u{e120}`)
+                    else if (atkm < 1.0)
+                        player.onScreenDisplay.setTitle(`{njmp.indicator}${njmp.methods.indicator(atkm)}`)
+                    else
+                        player.onScreenDisplay.setTitle(`{njmp.indicator}`)
                     if (
                         player.isSneaking && 
                         player_equipment.offhand && 

@@ -299,6 +299,141 @@
                 }
             ]
         },
+        "block.crop.break": {
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/block/bamboo/sapling_place1",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/block/bamboo/sapling_place2",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/block/bamboo/sapling_place3",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/block/bamboo/sapling_place4",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/block/bamboo/sapling_place5",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/block/bamboo/sapling_place6",
+                    "volume": 0.9
+                }
+            ]
+        },
+        "block.fungus.step": {
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/item/plant/netherwart1",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart1",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart2",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart2",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart3",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart3",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart4",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart4",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart5",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart5",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart6",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart6",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                }
+            ]
+        },
+        "block.nether_wart.break": {
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/item/plant/netherwart1",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart2",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart3",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart4",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart5",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart6",
+                    "pitch": 0.9,
+                    "volume": 0.9
+                }
+            ]
+        },
         "cauldron.adddye": {
             "__use_legacy_max_distance": "true",
             "category": "block",
@@ -537,14 +672,14 @@
             ]
         },
         "entity.cod.ambient": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
             "sounds": []
         },
         "entity.cod.death": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -556,7 +691,7 @@
             ]
         },
         "entity.cod.flop": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -580,7 +715,7 @@
             ]
         },
         "entity.cod.hurt": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -968,14 +1103,14 @@
             ]
         },
         "entity.salmon.ambient": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
             "sounds": []
         },
         "entity.salmon.death": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -999,7 +1134,7 @@
             ]
         },
         "entity.salmon.flop": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -1027,7 +1162,7 @@
             ]
         },
         "entity.salmon.hurt": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -1051,14 +1186,14 @@
             ]
         },
         "entity.tropical_fish.ambient": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
             "sounds": []
         },
         "entity.tropical_fish.death": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -1082,7 +1217,7 @@
             ]
         },
         "entity.tropical_fish.flop": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -1106,7 +1241,7 @@
             ]
         },
         "entity.tropical_fish.hurt": {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance": "true",
             "category": "neutral",
             "max_distance": null,
             "min_distance": null,
@@ -1115,6 +1250,128 @@
                 "sounds/entity/fish/hurt2",
                 "sounds/entity/fish/hurt3",
                 "sounds/entity/fish/hurt4"
+            ]
+        },
+        "item.crop.plant": {
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/item/plant/crop1",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop1",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop2",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop2",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop3",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop3",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop4",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop4",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop5",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop5",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop6",
+                    "volume": 0.45
+                },
+                {
+                    "name": "sounds/item/plant/crop6",
+                    "pitch": 1.2,
+                    "volume": 0.45
+                }
+            ]
+        },
+        "item.nether_wart.plant": {
+            "category": "block",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/item/plant/netherwart1",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart1",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart2",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart2",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart3",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart3",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart4",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart4",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart5",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart5",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart6",
+                    "volume": 0.9
+                },
+                {
+                    "name": "sounds/item/plant/netherwart6",
+                    "pitch": 1.12,
+                    "volume": 0.9
+                }
             ]
         },
         "item.trident.riptide_1": {
