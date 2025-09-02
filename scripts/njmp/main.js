@@ -1104,6 +1104,8 @@ let njmp = {
                             player.onScreenDisplay.setTitle(`{njmp.indicator}\u{e120}`)
                         else if (atkm < 1.0)
                             player.onScreenDisplay.setTitle(`{njmp.indicator}${njmp.methods.indicator(atkm)}`)
+                        else (atkm < 1.0)
+                            player.onScreenDisplay.setTitle(`{njmp.indicator}`)
                     
                     if (
                         player.isSneaking && 
