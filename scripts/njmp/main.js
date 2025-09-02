@@ -1099,12 +1099,12 @@ let njmp = {
                     } else {
                         player.triggerEvent('njmp:disable_1.9_pvp')
                     }
-                    if (player.hasTag('njmp:player.enable_1.9_pvp'))
+                    if (player.hasTag('njmp:player.enable_1.9_pvp')) 
                         if (atkm >= 1.0 && player.getProperty('njmp:player.holding_weapon') && player.getProperty('njmp:player.looking_at_entity'))
                             player.onScreenDisplay.setTitle(`{njmp.indicator}\u{e120}`)
                         else if (atkm < 1.0)
                             player.onScreenDisplay.setTitle(`{njmp.indicator}${njmp.methods.indicator(atkm)}`)
-                        else (atkm < 1.0)
+                        else
                             player.onScreenDisplay.setTitle(`{njmp.indicator}`)
                     
                     if (
